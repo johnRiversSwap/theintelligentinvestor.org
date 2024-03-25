@@ -3679,3 +3679,10 @@ body.search-is-visible {
 .entry__content {
     text-align: justify;
 }
+
+.logo-text {
+    font-family: Arial, sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    color: #f2f2f2; /* Highlight color */
+}

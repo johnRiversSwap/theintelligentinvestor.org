@@ -60,18 +60,18 @@
 
     <!-- favicons
     ================================================== -->
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+    <link rel="manifest" href="../site.webmanifest">
 
 </head>
 
-<body class="ss-bg-white">
+<body>
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-55MQR9SJ"
-        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-        <!-- End Google Tag Manager (noscript) -->
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
     <!-- preloader
     ================================================== -->
@@ -85,20 +85,21 @@
 
     <div id="top" class="s-wrap site-wrapper">
 
-     <!-- site header
+        <!-- site header
         ================================================== -->
         <header class="s-header">
 
+            <!-- New header using text instead -->
             <div class="header__top">
                 <div class="header__logo">
                     <a href="../index.html">
-                        <img src="../images/LogoV4.webp" alt="Homepage">
+                        <span class="logo-text">The Intelligent Investor</span>
                     </a>
                 </div>
-            </div> <!-- end header__top -->
-  
+            </div>
+
             <nav class="header__nav-wrap">
-  
+
                 <ul class="header__nav">
                     <li ><a href="../index.html" title="">Home</a></li>
                     <li class="has-children">
@@ -112,7 +113,7 @@
                     <li><a href="../thesis.html" title="">Thesis</a></li>
                     <li class="current"><a href="../learn.html" title="">Learn</a></li>
                 </ul> <!-- end header__nav -->
-  
+
                 <ul class="header__social">
                     <li class="ss-mail">
                         <a href="mailto:theintelligentinvestorsite@gmail.com">
@@ -125,16 +126,15 @@
                         </a>
                     </li>
                 </ul>
-  
+
             </nav> <!-- end header__nav-wrap -->
-  
+
             <!-- menu toggle -->
-            <a href="#0" class="header__menu-toggle">
+            <a href="#0" class="header__menu-toggle" style="left: 336px;"> <!-- I needed to add the style="left: 336px; since I still don't know why position was 660 instead of 336 like the rest of pages -->
                 <span>Menu</span>
             </a>
-  
+
         </header> <!-- end s-header -->
-  
 
       <!-- search
             This functionality just append the input like this (using juan as search input as an example): file:///C:/Users/juano/projects/Typerite_1_1_0/thesis.html?s=juan#
