@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>Portfolio - The Intelligent Investor</title>
+
+    <!-- Meta SEO -->
+    <meta name="title" content="Portfolio - The Intelligent Investor" />
+    <meta
+      name="description"
+      content="Historical returns, current holdings and recent changes of the Intelligent Investor portfolio."
+    />
+    <meta name="robots" content="index, follow" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="language" content="English" />
+    <meta name="author" content="The Intelligent Investor" />
+
+    <!-- Social media share -->
+    <meta property="og:title" content="Portfolio - The Intelligent Investor" />
+    <meta property="og:site_name" content="The Intelligent Investor" />
+    <meta property="og:url" content="https://www.theintelligentinvestor.org" />
+    <meta
+      property="og:description"
+      content="Historical returns, current holdings and recent changes of the Intelligent Investor portfolio."
+    />
+    <meta property="og:type" content="" />
+    <meta property="og:image" content="" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@IntelligentInv_" />
+    <meta name="twitter:creator" content="@IntelligentInv_" />  
+
+    <meta name='twitter:title' content="Portfolio - The Intelligent Investor" />
+    <meta name='twitter:description' content="Historical returns, current holdings and recent changes of the Intelligent Investor portfolio." />
+    <meta name='twitter:image' content="https://www.theintelligentinvestor.org/android-chrome-192x192.png"/>
+    <!--used in twitter, facebook, etc. card when link copied in tweet/status-->
+    <meta name='image' property='og:image' content="https://www.theintelligentinvestor.org/android-chrome-192x192.png" />
+       
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <style type="text/css" media="screen">
+        .s-styles { 
+            max-width: 1100px;
+            padding-bottom: 12rem;
+        }
+    </style>
+
+    <!-- script
+    ================================================== -->
+    <script src="js/modernizr.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+
+</head>
+
+<body class="ss-bg-white">
+
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader" class="dots-fade">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <div id="top" class="s-wrap site-wrapper">
+
+       <!-- site header
+        ================================================== -->
+        <header class="s-header">
+
+          <div class="header__top">
+              <div class="header__logo">
+                  <a href="index.html">
+                      <img src="images/LogoV4.webp" alt="Homepage">
+                  </a>
+              </div>
+          </div> <!-- end header__top -->
+
+          <nav class="header__nav-wrap">
+
+              <ul class="header__nav">
+                  <li><a href="index.html" title="">Home</a></li>
+                  <li class="has-children current">
+                      <a href="portfolio.html" title="">Portfolio</a>
+                      <ul class="sub-menu">
+                      <li><a href="portfolio.html#Performance">Performance</a></li>
+                      <li><a href="portfolio.html#Holdings">Holdings</a></li>
+                      <li><a href="portfolio.html#Transactions">Transactions</a></li>
+                      </ul>
+                  </li>
+                  <li><a href="thesis.html" title="">Thesis</a></li>
+                  <li><a href="learn.html" title="">Learn</a></li>
+              </ul> <!-- end header__nav -->
+
+              <ul class="header__social">
+                  <li class="ss-mail">
+                      <a href="mailto:theintelligentinvestorsite@gmail.com">
+                          <span class="screen-reader-text">Email</span>
+                      </a>
+                  </li>
+                  <li class="ss-twitter">
+                      <a href="https://twitter.com/IntelligentInv_">
+                          <span class="screen-reader-text">Twitter</span>
+                      </a>
+                  </li>
+              </ul>
+
+          </nav> <!-- end header__nav-wrap -->
+
+          <!-- menu toggle -->
+          <a href="#0" class="header__menu-toggle">
+              <span>Menu</span>
+          </a>
+
+      </header> <!-- end s-header -->
+
+
+       <!-- search
+            This functionality just append the input like this (using juan as search input as an example): file:///C:/Users/juano/projects/Typerite_1_1_0/thesis.html?s=juan#
+        ================================================== -->
+
+        <!--
+        <div class="s-search">
+
+            <div class="search-block">
+    
+                <form role="search" method="get" class="search-form" action="#">
+                    <label>
+                        <span class="hide-content">Search for:</span>
+                        <input type="search" class="search-field" placeholder="Type Keywords" value="" name="s" title="Search for:" autocomplete="off">
+                    </label>
+                    <input type="submit" class="search-submit" value="Search">
+                </form>
+    
+                <a href="#0" title="Close Search" class="search-close">Close</a>
+    
+            </div>  
+            <a href="#0" class="search-trigger">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:"><path d="M10,18c1.846,0,3.543-0.635,4.897-1.688l4.396,4.396l1.414-1.414l-4.396-4.396C17.365,13.543,18,11.846,18,10 c0-4.411-3.589-8-8-8s-8,3.589-8,8S5.589,18,10,18z M10,4c3.309,0,6,2.691,6,6s-2.691,6-6,6s-6-2.691-6-6S6.691,4,10,4z"></path></svg>
+                <span>Search</span>
+            </a>
+            <span class="search-line"></span>
+
+        </div> 
+        -->
+        <!-- end s-search -->
+
+
+        <!-- site content
+        ================================================== -->
+        <div class="s-content content">
+            <main class="row s-styles">
+                
+                <!-- styles
+                ================================================== -->
+                <section id="Performance" class="column large-full">
+                    
+                    <div class="row section-intro">
+
+                        <div class="column large-full">
+
+                            <h1 class="display-1">Portfolio</h1>
+
+                            <p class="lead">In this section we will display the historical returns, current holdings, and recent changes in the portfolio as of <strong>24/03/2024</strong>. Welcome!</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+
+                        <div class="column large-12 tab-full" style="margin-bottom: 2rem;">
+
+                            <h2 style="margin-top: 2rem;">Historical Returns</h2>
+
+                            
+
+                            <p>
+                                The primary broker I have utilized thus far is DeGiro. However, DeGiro does not provide historical portfolio variations; it only offers the current total value. Since external tools available for tracking portfolio evolution may not be entirely accurate, I've opted to monitor performance differently. Below is a graph illustrating all instances where I deposited funds into my DeGiro and Etoro accounts. The final values for SP500 and MSCI World indicate that each entire deposit was used to acquire stocks of these ETFs on the same day.
+                             </p>
+                             <div class="chart-table-container">
+                                <table class="chart-table">
+                                    <thead>
+                                        <tr>
+                                            <th></th>
+                                            <th>Deposited</th>
+                                            <th>Portfolio</th>
+                                            <th>SP500</th>
+                                            <th>MSCI World</th>
+                                            
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Current Value</td>
+                                            <td>€43,693</td>
+                                            <td>€61,669</td>
+                                            <td>€52,606</td>
+                                            <td>€51,058</td>
+                                      
+                                        </tr>
+                                        <tr>
+                                            <td>Total Return</td>
+                                            <td></td>
+                                            <td>41.1%</td>
+                                            <td>20.4%</td>
+                                            <td>16.8%</td>
+                                                                                        
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                          
+                            <canvas id="myChart"></canvas>
+                           
+
+                        </div>
+                        <div class="column large-12 tab-full">
+
+                            <h2 id="Holdings" style="margin-top: 4rem;">Current Holdings</h2>
+                            
+                            <table>
+                                <thead>
+                                  <tr>
+                                    <th>Company</th>
+                                    <th>Symbol</th>
+                                    <th>Weight</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>CLEANSPARK INC. - COMMON STOCK</td>
+                                    <td>CLSK</td>
+                                    <td>10.68%</td>
+                                  </tr>
+                                  <tr>
+                                    <td>BROOKFIELD CORPORATION INC CLASS A</td>
+                                    <td>BN</td>
+                                    <td>10.36%</td>
+                                  </tr>
+                                  <tr>
+                                    <td>ISHARES MSCI CHINA ETF</td>
+                                    <td>MCHI</td>
+                                    <td>9.33%</td>
+                                  </tr>
+                                  <tr>
+                                    <td>ADR ON JD.COM INC</td>
+                                    <td>JD</td>
+                                    <td>5.51%</td>
+                                  </tr>
+                                  <tr>
+                                    <td>TELUS INTERNATIONAL (CDA) INC. S...</td>
+                                    <td>TIXT</td>
+                                    <td>4.80%</td>
+                                  </tr>
+                                  <tr>
+                                    <td>TESLA MOTORS INC. - C</td>
+                                    <td>TSLA</td>
+                                    <td>4.76%</td>
+                                  </tr>
+                                  <tr>
+                                    <td>FRP HOLDINGS INC. - C</td>
+                                    <td>FRPH</td>
+                                    <td>4.67%</td>
+                                  </tr>
+                                  <tr>
+                                    <td>PERSHING SQUARE HOLDINGS LTD</td>
+                                    <td>PSH</td>
+                                    <td>4.02%</td>
+                                  </tr>
+                                  <tr>
+                                    <td>MICROSOFT CORPORATION</td>
+                                    <td>MSFT</td>
+                                    <td>3.83%</td>
+                                  </tr>
+                                  <tr>
+                                    <td>ADR ON SEA LTD</td>
+                                    <td>SE</td>
+                                    <td>3.21%</td>
+                                  </tr>
+                                  <tr>
+                                    <td>SPOTIFY TECHNOLOGY S.A</td>
+                                    <td>SPOT</td>
+                                    <td>2.73%</td>
+                                  </tr>
+                                  <tr>
+                                    <td>MICROSTRATEGY INCORPOR</td>
+                                    <td>MSTR</td>
+                                    <td>2.73%</td>
+                                  </tr>
+                                  <tr>
+                                    <td>BYD CO LTD</td>
+                                    <td>BY6</td>
+                                    <td>2.64%</td>
+                                  </tr>
+                                  <tr>
+                                    <td>ADR ON ALIBABA GROUP HOLDING</td>
+                                    <td>BABA</td>
+                                    <td>2.59%</td>
+                                  </tr>
+                                  <tr>
+                                    <td>INDEXA CAPITAL GROUP SA</td>
+                                    <td>INDXA</td>
+                                    <td>2.43%</td>
+                                  </tr>
+                                  <tr>
+                                    <td>ADR ON IRSA INVERSIONED Y REPRES...</td>
+                                    <td>IRS</td>
+                                    <td>2.43%</td>
+                                  </tr>
+                                  <tr>
+                                    <td>HELLOFRESH SE</td>
+                                    <td>HFG</td>
+                                    <td>2.25%</td>
+                                  </tr>
+                                  <tr>
+                                    <td>ENAD GLOBAL 7 AB</td>
+                                    <td>TOAD</td>
+                                    <td>2.12%</td>
+                                  </tr>
+                                  <tr>
+                                    <td>TELEPERFORMANCE SE</td>
+                                    <td>TEP</td>
+                                    <td>2.03%</td>
+                                  </tr>
+                                  <tr>
+                                    <td>HSBC MSCI WORLD UCITS ETF</td>
+                                    <td>H4Z3</td>
+                                    <td>2.02%</td>
+                                  </tr>
+                                  <tr>
+                                    <td>BROOKFIELD ASSET MANAGEMENT LTD ...</td>
+                                    <td>BAM</td>
+                                    <td>2.01%</td>
+                                  </tr>
+                                  <tr>
+                                    <td>FLATEXDEGIRO AG</td>
+                                    <td>FTK</td>
+                                    <td>1.95%</td>
+                                  </tr>
+                                  <tr>
+                                    <td>GRAPHIC PACKAGING HOLDING CO</td>
+                                    <td>GPK</td>
+                                    <td>1.81%</td>
+                                  </tr>
+                                  <tr>
+                                    <td>BUMBLE INC-A</td>
+                                    <td>BMBL</td>
+                                    <td>1.65%</td>
+                                  </tr>
+                                  <tr>
+                                    <td>CASH & CASH FUND & FTX CASH (EUR)</td>
+                                    <td></td>
+                                    <td>1.49%</td>
+                                  </tr>
+                                  <tr>
+                                    <td>EMBRACER GROUP AB</td>
+                                    <td>EMBRAC B</td>
+                                    <td>1.47%</td>
+                                  </tr>
+                                  <tr>
+                                    <td>BR.AMER.TOB.</td>
+                                    <td>BATS</td>
+                                    <td>1.46%</td>
+                                  </tr>
+                                  <tr>
+                                    <td>BITFARMS LTD. - COMMON STOCK</td>
+                                    <td>BITF</td>
+                                    <td>1.39%</td>
+                                  </tr>
+                                  <tr>
+                                    <td>ISHARES 20+ YEAR TREASURY BOND ETF</td>
+                                    <td>TLT</td>
+                                    <td>0.98%</td>
+                                  </tr>
+                                  <tr>
+                                    <td>DOLE PLC</td>
+                                    <td>DOLE</td>
+                                    <td>0.62%</td>
+                                  </tr>
+                                  <tr>
+                                    <td>KAISA PROSPERITY HOLDINGS LT</td>
+                                    <td>2168</td>
+                                    <td>0.06%</td>
+                                  </tr>
+                                  <tr>
+                                    <td>TOTAL</td>
+                                    <td></td>
+                                    <td>100.00%</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              
+                              
+
+                        </div>
+                        <div class="column large-12 tab-full">
+
+                            <h2 id="Transactions" style="margin-top: 4rem;">Recent Transactions</h2>
+                            <div class="table-container">
+                            <table>
+                                <thead>
+                                  <tr>
+                                    <th>Date</th>
+                                    <th>Company</th>
+                                    <th>Symbol</th>
+                                    <th>Shares</th>
+                                    <th>Price</th>
+                                    <th>Currency</th>
+                                    <th>Broker</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>14-03-2024</td>
+                                    <td>HELLOFRESH SE</td>
+                                    <td>HFT</td>
+                                    <td>180</td>
+                                    <td>6.98</td>
+                                    <td>EUR</td>
+                                    <td>DeGiro</td>
+                                  </tr>
+                                  <tr>
+                                    <td>7/3/2024</td>
+                                    <td>MICROSTRATEGY INCORPOR</td>
+                                    <td>MSTR</td>
+                                    <td>-1</td>
+                                    <td>1268.38</td>
+                                    <td>USD</td>
+                                    <td>DeGiro</td>
+                                  </tr>
+                                  <tr>
+                                    <td>7/3/2024</td>
+                                    <td>TELEPERFORMANCE SE</td>
+                                    <td>TEP</td>
+                                    <td>14</td>
+                                    <td>85.38</td>
+                                    <td>EUR</td>
+                                    <td>DeGiro</td>
+                                  </tr>
+                                  <tr>
+                                    <td>4/3/2024</td>
+                                    <td>BUMBLE INC-A</td>
+                                    <td>BMBL</td>
+                                    <td>100</td>
+                                    <td>11.47</td>
+                                    <td>USD</td>
+                                    <td>DeGiro</td>
+                                  </tr>
+                                  <tr>
+                                    <td>12/2/2024</td>
+                                    <td>MICROSTRATEGY INCORPOR</td>
+                                    <td>MSTR</td>
+                                    <td>-1</td>
+                                    <td>697.6</td>
+                                    <td>USD</td>
+                                    <td>DeGiro</td>
+                                  </tr>
+                                  <tr>
+                                    <td>9/2/2024</td>
+                                    <td>INDEXA CAPITAL GROUP SA</td>
+                                    <td>INDXA</td>
+                                    <td>150</td>
+                                    <td>9.8</td>
+                                    <td>EUR</td>
+                                    <td>DeGiro</td>
+                                  </tr>
+                                  <tr>
+                                    <td>25-01-2024</td>
+                                    <td>TESLA MOTORS INC. - C</td>
+                                    <td>TSLA</td>
+                                    <td>10</td>
+                                    <td>181.4</td>
+                                    <td>USD</td>
+                                    <td>DeGiro</td>
+                                  </tr>
+                                  <tr>
+                                    <td>22-01-2024</td>
+                                    <td>ISHARES MSCI CHINA ETF</td>
+                                    <td>MCHI</td>
+                                    <td>28.03</td>
+                                    <td>36.084</td>
+                                    <td>USD</td>
+                                    <td>etoro</td>
+                                  </tr>
+                                  <tr>
+                                    <td>19-01-2024</td>
+                                    <td>BITFARMS LTD. - COMMON STOCK</td>
+                                    <td>BITF</td>
+                                    <td>400</td>
+                                    <td>2</td>
+                                    <td>USD</td>
+                                    <td>DeGiro</td>
+                                  </tr>
+                                  <tr>
+                                    <td>17-01-2024</td>
+                                    <td>ISHARES MSCI CHINA ETF</td>
+                                    <td>MCHI</td>
+                                    <td>14.7</td>
+                                    <td>36.58</td>
+                                    <td>USD</td>
+                                    <td>etoro</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>  
+
+                    </div> <!-- end row -->
+
+                </section> <!-- end styles -->
+
+            </main>
+
+        </div> <!-- end s-content -->
+
+
+        <!-- footer
+        ================================================== -->
+        <footer class="s-footer footer">
+            <div class="row">
+                <div class="column large-full footer__content">
+                    <div class="footer__copyright">
+                        <span>© Copyright Typerite 2021</span> 
+                        <span>Design by <a href="https://www.styleshout.com/">StyleShout</a></span>
+                        <span>All content on this site is available for use, but please include a link back to <a href="https://www.theintelligentinvestor.org/">The Intelligent Investor</a> alongside the content.</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="go-top">
+                <a class="smoothscroll" title="Back to Top" href="#top"></a>
+            </div>
+        </footer>
+
+    </div> <!-- end s-wrap -->
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    
+    <script>
+        const data = [
+    { date: '03/02/2021', totalDeposit: 1500, sp500: null, acwi: null, juanRios: null },
+    { date: '10/06/2021', totalDeposit: 3500, sp500: null, acwi: null, juanRios: null },
+    { date: '14/06/2021', totalDeposit: 4500, sp500: null, acwi: null, juanRios: null },
+    { date: '29/07/2021', totalDeposit: 6000, sp500: null, acwi: null, juanRios: null },
+    { date: '25/08/2021', totalDeposit: 7000, sp500: null, acwi: null, juanRios: null },
+    { date: '16/09/2021', totalDeposit: 8000, sp500: null, acwi: null, juanRios: null },
+    { date: '15/10/2021', totalDeposit: 9500, sp500: null, acwi: null, juanRios: null },
+    { date: '23/12/2021', totalDeposit: 11000, sp500: null, acwi: null, juanRios: null },
+    { date: '25/01/2022', totalDeposit: 13000, sp500: null, acwi: null, juanRios: null },
+    { date: '04/02/2022', totalDeposit: 14400, sp500: null, acwi: null, juanRios: null },
+    { date: '24/02/2022', totalDeposit: 16400, sp500: null, acwi: null, juanRios: null },
+    { date: '18/07/2022', totalDeposit: 17900, sp500: null, acwi: null, juanRios: null },
+    { date: '26/09/2022', totalDeposit: 20400, sp500: null, acwi: null, juanRios: null },
+    { date: '27/10/2022', totalDeposit: 22400, sp500: null, acwi: null, juanRios: null },
+    { date: '09/11/2022', totalDeposit: 23900, sp500: null, acwi: null, juanRios: null },
+    { date: '05/12/2022', totalDeposit: 25400, sp500: null, acwi: null, juanRios: null },
+    { date: '05/02/2023', totalDeposit: 27000, sp500: null, acwi: null, juanRios: null },
+    { date: '20/03/2023', totalDeposit: 27828, sp500: null, acwi: null, juanRios: null },
+    { date: '11/04/2023', totalDeposit: 28656, sp500: null, acwi: null, juanRios: null },
+    { date: '10/07/2023', totalDeposit: 29392, sp500: null, acwi: null, juanRios: null },
+    { date: '11/08/2023', totalDeposit: 30170.94, sp500: null, acwi: null, juanRios: null },
+    { date: '28/09/2023', totalDeposit: 31090.29, sp500: null, acwi: null, juanRios: null },
+    { date: '28/09/2023', totalDeposit: 33090.29, sp500: null, acwi: null, juanRios: null },
+    { date: '10/10/2023', totalDeposit: 33935.35, sp500: null, acwi: null, juanRios: null },
+    { date: '12/10/2023', totalDeposit: 34487.35, sp500: null, acwi: null, juanRios: null },
+    { date: '20/11/2023', totalDeposit: 36487.35, sp500: null, acwi: null, juanRios: null },
+    { date: '11/12/2023', totalDeposit: 37039.35, sp500: null, acwi: null, juanRios: null },
+    { date: '19/12/2023', totalDeposit: 39039.35, sp500: null, acwi: null, juanRios: null },
+    { date: '09/01/2024', totalDeposit: 40268, sp500: null, acwi: null, juanRios: null },
+    { date: '17/01/2024', totalDeposit: 40762.97, sp500: null, acwi: null, juanRios: null },
+    { date: '18/01/2024', totalDeposit: 42762.97, sp500: null, acwi: null, juanRios: null },
+    { date: '22/01/2024', totalDeposit: 43693.60, sp500: null, acwi: null, juanRios: null },
+    { date: '24/03/2024', totalDeposit: 43693.60, sp500: 52605.85, acwi: 51057.57, juanRios: 61668.77 }
+];
+
+
+        // Extracting labels and datasets
+        const labels = data.map(entry => entry.date);
+        const totalDepositData = data.map(entry => entry.totalDeposit);
+        const sp500Data = data.map(entry => entry.sp500);
+        const acwiData = data.map(entry => entry.acwi);
+        const juanRiosData = data.map(entry => entry.juanRios);
+
+        const ctx = document.getElementById('myChart');
+
+        const lastAvailableDateIndex = data.length - 1; // Index of the last available date
+      
+        new Chart(ctx, {
+          type: 'line',
+          data: {
+            labels: labels,
+          datasets: [
+          {
+            label: 'Deposited',
+            data: totalDepositData,
+            borderColor: 'rgba(255, 206, 86, 1)',
+            backgroundColor: 'rgba(255, 206, 86, 0.5)', // Fill color for the data points
+            fill: false,
+            stepped: 'before' // Use stepped line interpolation
+          },
+          {
+            label: 'Portfolio',
+            data: juanRiosData,
+            borderColor:  'rgba(54, 162, 235, 1)',
+            backgroundColor: 'rgba(54, 162, 235, 0.5)', // Fill color for the data points
+            fill: false,
+            pointRadius: (context) => {
+                    return context.dataIndex === lastAvailableDateIndex ? 20 : 5; // Larger point radius for latest date
+                }
+          },
+          {
+            label: 'SP500',
+            data: sp500Data,
+            borderColor:  'rgba(255, 99, 132, 1)',
+            backgroundColor: 'rgba(255, 99, 132, 0.5)', // Fill color for the data points
+            fill: false,
+            pointRadius: (context) => {
+                    return context.dataIndex === lastAvailableDateIndex ? 15 : 5; // Larger point radius for latest date
+                }
+          },
+          {
+            label: 'MSCI World',
+            data: acwiData,
+            borderColor:  'rgba(75, 192, 192, 1)',
+            backgroundColor: 'rgba(75, 192, 192, 0.5)', // Fill color for the data points
+            fill: false,
+            pointRadius: (context) => {
+                    return context.dataIndex === lastAvailableDateIndex ? 15 : 5; // Larger point radius for latest date
+                }
+          }
+          
+        ]
+      },
+      options: {
+            aspectRatio: 1.5,
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    ticks: {
+                        callback: function(value, index, values) {
+                            return value.toLocaleString('en-US', { style: 'currency', currency: 'EUR' });
+                        }
+                    }
+                }
+            }
+      },
+});
+</script>
+    
+
+</body>
