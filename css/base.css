@@ -358,9 +358,18 @@ svg,
 img,
 video embed,
 iframe,
+.imgPost
 object {
     max-width : 100%;
     height    : auto;
+}
+
+/* Media query for screens wider than 768px */
+@media screen and (min-width: 768px) {
+    /* Adjust max-width for img tags */
+    .imgPost {
+        max-width: 20%; /* Adjust the width as needed */
+    }
 }
 
 /* ------------------------------------------------------------------- 
