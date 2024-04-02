@@ -368,7 +368,7 @@ object {
 @media screen and (min-width: 768px) {
     /* Adjust max-width for img tags */
     .imgPost {
-        max-width: 20%; /* Adjust the width as needed */
+        max-width: 30%; /* Adjust the width as needed */
     }
 }
 
