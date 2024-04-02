@@ -3688,3 +3688,17 @@ body.search-is-visible {
     font-weight: bold;
     color: #f2f2f2; /* Highlight color */
 }
+
+/* Optionally, you can define a specific height for the chart container */
+.chart-container {
+    position: relative;
+    width: 100%; /* Set width to fill the parent container */
+    height: 70vh; /* Adjust the height as needed for better visibility on mobile */
+}
+
+/* Adjust the height for mobile devices */
+@media only screen and (max-width: 600px) {
+    .chart-container {
+        height: 80vh; /* Adjusted height for mobile devices */
+    }
+}
