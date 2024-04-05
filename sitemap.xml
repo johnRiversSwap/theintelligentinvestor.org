@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<url>
+    <loc>https://www.theintelligentinvestor.org</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.theintelligentinvestor.org" />
+<!--     <xhtml:link rel="alternate" hreflang="fr" href="https://www.givearn.com/fr" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.givearn.com/es" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.givearn.com/it" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.givearn.com/de" />
+    <xhtml:link rel="alternate" hreflang="bg" href="https://www.givearn.com/bg" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.givearn.com/pt" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.givearn.com/nl" />
+    <xhtml:link rel="alternate" hreflang="fi" href="https://www.givearn.com/fi" />
+    <xhtml:link rel="alternate" hreflang="sk" href="https://www.givearn.com/sk" />
+    <xhtml:link rel="alternate" hreflang="el" href="https://www.givearn.com/el" /> -->
+     
+    <lastmod>2024-04-03</lastmod>
+    <priority>1.00</priority>
+</url>
+<url>
+    <loc>https://www.theintelligentinvestor.org/portfolio.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.theintelligentinvestor.org/portfolio.html" />
+    <lastmod>2024-04-03</lastmod>
+    <priority>0.90</priority>
+</url>
+<url>
+    <loc>https://www.theintelligentinvestor.org/learn.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.theintelligentinvestor.org/learn.html" />
+    <lastmod>2024-04-03</lastmod>
+    <priority>0.90</priority>
+</url>
+<url>
+    <loc>https://www.theintelligentinvestor.org/thesis.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.theintelligentinvestor.org/thesis.html" />
+    <lastmod>2024-04-03</lastmod>
+    <priority>0.90</priority>
+</url>
+<url>
+    <loc>https://www.theintelligentinvestor.org/diary.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.theintelligentinvestor.org/diary.html" />
+    <lastmod>2024-04-03</lastmod>
+    <priority>0.90</priority>
+</url>
+<url>
+    <loc>https://www.theintelligentinvestor.org/key-qualitative-attributes-high-quality-companies-must-have.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.theintelligentinvestor.org/key-qualitative-attributes-high-quality-companies-must-have.html" />
+    <lastmod>2024-04-03</lastmod>
+    <priority>0.60</priority>
+</url>
+<url>
+    <loc>https://www.theintelligentinvestor.org/key-quantitative-metrics-to-identify-high-quality-companies.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.theintelligentinvestor.org/key-quantitative-metrics-to-identify-high-quality-companies.html" />
+    <lastmod>2024-04-03</lastmod>
+    <priority>0.60</priority>
+</url>
+<url>
+    <loc>https://www.theintelligentinvestor.org/one-up-on-wall-street-highlights.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.theintelligentinvestor.org/one-up-on-wall-street-highlights.html" />
+    <lastmod>2024-04-03</lastmod>
+    <priority>0.60</priority>
+</url>
+<url>
+    <loc>https://www.theintelligentinvestor.org/hellofresh.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.theintelligentinvestor.org/hellofresh.html" />
+    <lastmod>2024-04-03</lastmod>
+    <priority>0.60</priority>
+</url>
+</urlset>
