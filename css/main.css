@@ -3665,7 +3665,7 @@ body.search-is-visible {
 .chart-table {
     border-collapse: collapse;
     width: 100%;
-    font-size: 12px;
+    font-size: 12px; 
 }
 
 .chart-table th,
@@ -3719,4 +3719,27 @@ body.search-is-visible {
     .responsive-image {
         width: 100%;
     }
+}
+
+#fullWidthImage {
+    transition: width 0.5s, height 0.5s; /* Smooth transition */
+  }
+  
+  .fullWidth {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: auto;
+    max-width: 100%; /* Ensures the image doesn't overflow */
+    object-fit: cover;
+    z-index: 9999; /* Make sure it appears on top of other content */
+  }
+  
+  .blog-image {
+    max-width: 100%;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
 }

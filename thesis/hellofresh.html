@@ -22,14 +22,15 @@
     </script>
     <!-- End Google Consent Mode-->
     
-    <!-- Google Tag Manager -->
-    <script data-cookieconsent="ignore">
-    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-55MQR9SJ');</script>
-    <!-- End Google Tag Manager -->
+   <!-- Google tag (gtag.js) -->
+   <script async src="https://www.googletagmanager.com/gtag/js?id=G-RJDM3PP7WC"></script>
+   <script>
+   window.dataLayer = window.dataLayer || [];
+   function gtag(){dataLayer.push(arguments);}
+   gtag('js', new Date());
+
+   gtag('config', 'G-RJDM3PP7WC');
+   </script>
 
     <!-- Cookiebot CMP-->
     <script 
@@ -101,10 +102,6 @@
 </head>
 
 <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-55MQR9SJ"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
 
     <!-- preloader
     ================================================== -->
@@ -269,7 +266,7 @@
                                     <li>
                                         <p style="margin:0">How stable is the demand for the company's products?</p>
                                         <p style="margin:0">HelloFresh faces a challenge in customer loyalty, evident in high churn rates. According to <a href="https://www.bernsteinresearch.com/CMSObjectBR/Files/Recruiting/Hello%20Fresh%20-%20Paying%20People%20to%20Eat%202022.pdf" target="_blank">bernsteinresearch</a>, only 30% of customers were retained in Q4, while <a href="https://secondmeasure.com/datapoints/meal-kit-competitors-blue-apron-nyse-aprn-hellofresh-customer-retention-market-share/" target="_blank">Bloomberg</a> reports a retention rate of only 10% in the 11th month. However, despite these high churn rates, HelloFresh has managed to maintain a consistent base of active customers exceeding 6 million over the past three years. This suggests the existence of a core group of customers who remain loyal to the product. Despite the tailwinds provided by COVID-19, which are gradually fading, this core customer group continues to support the company. The number of active HelloFresh customers worldwide from 2016 to 2023 illustrates this trend:</p>
-                                        <img src="../images/thesis/HelloFresh/activeCustomers.png" class="responsive-image" alt="Number of active HelloFresh customers worldwide from 2016 to 2023">
+                                        <img src="../images/thesis/HelloFresh/activeCustomers.png" class="blog-image" alt="Number of active HelloFresh customers worldwide from 2016 to 2023" id="fullWidthImage">
                                     </li>
                                     <li>
                                         <p style="margin:0">Is the company highly dependent on external factors?</p>
@@ -282,7 +279,7 @@
                                     <li>
                                         <p style="margin:0">Does the company demonstrate faster growth compared to its competitors?</p>
                                         <p style="margin:0">Yes, as indicated in the provided image.</p>
-                                        <img src="../images/thesis/HelloFresh/marketShare.png" class="responsive-image" alt="U.S. Share of Sales for Major Meal Kit Companies">
+                                        <img src="../images/thesis/HelloFresh/marketShare.png" class="blog-image" alt="U.S. Share of Sales for Major Meal Kit Companies">
                                     </li>
                                     <li>
                                         <p style="margin:0">How easily can the company's market be disrupted?</p>
@@ -349,7 +346,7 @@
                                 <b>Analyzing HelloFresh competitive advantages.</b>
                                 <p>The only significant competitive advantage (MOAT) that HelloFresh possesses is its 'economies of scale'. As the company continues to increase its volumes and expand into synergistic verticals, its costs decrease. This is due to enhanced bargaining power with suppliers, optimization of its supply chain network, and improved manufacturing capabilities. Consequently, HelloFresh can lower prices and reach a broader audience, thus creating entry barriers for competitors.</p>  
                                 <p>An excerpt from the company's 2022 annual report illustrating how they have been expanding their supply chain capabilities:</p>
-                                <img src="../images//thesis/HelloFresh/supplyChain.png" class="responsive-image" alt="HelloFresh SE is undertaking a significant expansion of its supply chain.">
+                                <img src="../images//thesis/HelloFresh/supplyChain.png" class="blog-image" alt="HelloFresh SE is undertaking a significant expansion of its supply chain.">
                                 <p>Additionally, albeit to a lesser extent in my opinion, HelloFresh benefits from intangible assets, particularly brand recognition. As demonstrated in <a href="../thesis/hellofresh.html#section2">section 2</a>, the company maintains a dominant position as the global market leader in meal-kit and ready-to-eat deliveries.</p>
                                 <p style="margin:0">Now, in the table below, we will delve into the Porter's Five Forces Framework:</p>
                                 <div class="chart-table-container">
@@ -385,7 +382,7 @@
                             <li id="section5">
                                 <b>Management.</b>  
                                 <p>The company was founded in 2011 by Dominik Richter, who continues to serve as CEO, and Thomas Griesel, the current CEO of the international division. Jessica Nilsson, another co-founder, departed in early 2014. Dominik currently holds 4% of the company's shares, making him the fourth largest shareholder. Management compensation is notably aligned with the company's stock performance, as illustrated in the accompanying image.</p>
-                                <img src="../images/thesis/HelloFresh/salaries.png" class="responsive-image" alt="2021 HelloFresh SE management compensation">
+                                <img src="../images/thesis/HelloFresh/salaries.png" class="blog-image" alt="2021 HelloFresh SE management compensation">
                                 <p>Moreover, management demonstrates adept capital allocation and a willingness to make bold decisions. For instance, they opted to discontinue operations in Japan in 2022 to focus on more promising markets. Additionally, the initiation of a buyback program in 2023/2024 highlights their commitment to enhancing shareholder value.</p>
                             </li>
                             <li id="section6">
@@ -435,6 +432,9 @@
                             <li id="section7">
                                 <b>Valuation.</b>  
                                 <p>We will commence this valuation section by comparing HelloFresh's current multiples with historical ones.</p>
+
+                                <!-- <img src="../images/thesis/HelloFresh/hellofresh_historical_valuation.png" class="blog-image fullWidthToggle" alt="HelloFresh's historical valuation multiples"> -->
+
                                 <div class="chart-table-container">
                                     <table class="chart-table">
                                     <thead>
@@ -479,6 +479,7 @@
                                   </div>
                                   <p>It is understandable that the company is now much cheaper than in the past, as it no longer appears to be a growth company but rather a mature one.</p>
                                   <p>Now, let's compare it against different competitors: some supermarkets, food companies, and food delivery ones.</p>
+                                  <!-- <img src="../images/thesis/HelloFresh/competitors_multiples.png" class="blog-image fullWidthToggle" alt="HelloFresh's competitors valuation multiples"> -->
                                   <div class="chart-table-container" style="margin-bottom: 0;">
                                     <table class="chart-table" style="margin-bottom: 0;">
                                     <thead>
@@ -555,7 +556,7 @@
                                   <p>In my view, a company that generates free cash flow, maintains manageable debt, and holds a dominant market position (close to a monopoly) has minimal chances of bankruptcy and dissolution.</p>
                                   <b>Security margin</b>
                                   <p>Here's my valuation, assuming quite conservative hypotheses: the scenario below considers that during the next 5 years: a) the company grows revenue at 1% annually; b) EBITDA margin improves from 5.9% to 7.0% (company's stated long-term goal is 10.0%). With these numbers, and considering how competitors are valued, it is not far-fetched to expect the EV/EBITDA multiple to improve to 5x, resulting in an annual Enterprise Value growth of 15.4% by 2028. If dilution continues at the same rate as in past years, 0.49% annually, and cash and debt doesn’t change much, we can anticipate the stock price to increase by more than 90% from current levels (or >14% CAGR).</p>
-                                  <img src="../images/thesis/HelloFresh/valuation.png" class="responsive-image" alt="Conservative HelloFresh SE Valuation Analysis and Growth Projection">
+                                  <img src="../images/thesis/HelloFresh/valuation.png" class="blog-image" alt="Conservative HelloFresh SE Valuation Analysis and Growth Projection" style="width: 70%">
 
                             </li>
                             <li id="section8">
@@ -651,5 +652,6 @@
     <script src="../js/jquery-3.2.1.min.js"></script>
     <script src="../js/plugins.js"></script>
     <script src="../js/main.js"></script>
+   <!--  <script src="../js/script.js"></script> -->
 
 </body>
