@@ -89,6 +89,29 @@
     <link rel="stylesheet" href="../css/vendor.css">
     <link rel="stylesheet" href="../css/main.css">
 
+    <style>
+        /* Styles for larger screens (desktop and bigger) */
+        @media only screen and (min-width: 768px) {
+            #first-table {
+                display: table;
+            }
+            #second-table {
+                display: none;
+            }
+        }
+
+        /* Styles for smaller screens (mobile and smaller) */
+        @media only screen and (max-width: 767px) {
+            #first-table {
+                display: none;
+            }
+            #second-table {
+                display: table;
+            }
+        }
+
+    </style>
+
     <!-- script
     ================================================== -->
     <script src="../js/modernizr.js"></script>
@@ -230,9 +253,9 @@
                         <p>
                             When investing in the stock market, we're purchasing parts of a company with our current funds, aiming to increase their value over time. This can be achieved in multiple ways: focusing on short-term market trends, known as speculation, or investing in companies whose future prospects we believe will improve (e.g., increased revenue, market share, etc.) and holding them long-term. Value investing comes into play when we buy these promising companies at a lower price than their perceived worth. In today's post, we won't delve into valuation (saving that for future publications) but instead, we'll explore some financial metrics that can act as a preliminary filter to identify high-quality companies. However, please note that before making a final decision to invest in a company, it's crucial to conduct a deeper analysis, focusing on its competitive advantages, often referred to as MOATs. We'll address this topic in another <a href="../learn/key-qualitative-attributes-high-quality-companies-must-have.html">post</a>. 
                         </p>
-                        <p>
+                        <h2 class="h4">
                             So, which financial metrics allow us to identify high-quality companies?
-                        </p>
+                        </h2>
                         <ul>
                             <li>Does the company grow revenue and Earnings-Per-Share (EPS) faster than its competitors? Does it have greater Return-On- Invested-Capital (ROIC)? What about Earnings-Before-Interest-Taxes (EBIT) margins? If increasing, it might indicate that the company is gaining market share against competitors.</li>
                             <li>Has the company increased or reduced the number of shares over time?</li>
@@ -255,11 +278,14 @@
                             </p>
                             <cite>Terry Smith, Fundsmith fund founder.</cite>
                         </blockquote>
+                        <h2 class="h4">
+                            Example of financial analysis 
+                        </h2>
                         <p>
                             Below, you can find a preliminary analysis I have carried out for some popular high-quality companies using the metrics explained above:
                         </p>
                         <div class="chart-table-container">
-                            <table class="chart-table">
+                            <table id="first-table" class="chart-table">
                             <thead>
                               <tr>
                                 <th>Date</th>
@@ -342,9 +368,122 @@
                             </tbody>
                           </table>
                         </div>
-                        <p>
+
+                        <div class="chart-table-container">
+                            <table id="second-table" class="chart-table">
+                                <tbody>
+                                    <tr>
+                                        <th>Date</th>
+                                        <td>24/03/2024</td>
+                                        <td>24/03/2024</td>
+                                        <td>24/03/2024</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Company Name</th>
+                                        <td>Nike</td>
+                                        <td>Autodesk</td>
+                                        <td>Tesla</td>
+                                    </tr>
+                                    <tr>
+                                        <th>10Y CAGR Revenue</th>
+                                        <td>6.40%</td>
+                                        <td>9.20%</td>
+                                        <td>40.70%</td>
+                                    </tr>
+                                    <tr>
+                                        <th>10Y CAGR EPS norm.</th>
+                                        <td>9.40%</td>
+                                        <td>16.30%</td>
+                                        <td>78.60%</td>
+                                    </tr>
+                                    <tr>
+                                        <th>LTM Net Debt / EBITDA</th>
+                                        <td>0.2</td>
+                                        <td>0.11</td>
+                                        <td>(-1.33)</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Total debt / Equity</th>
+                                        <td>86.72%</td>
+                                        <td>141.56%</td>
+                                        <td>15.00%</td>
+                                    </tr>
+                                    <tr>
+                                        <th>WACC</th>
+                                        <td>10.94%</td>
+                                        <td>12.68%</td>
+                                        <td>9.51%</td>
+                                    </tr>
+                                    <tr>
+                                        <th>ROIC 10Y avg</th>
+                                        <td>26.37%</td>
+                                        <td>6.77%</td>
+                                        <td>3.08%</td>
+                                    </tr>
+                                    <tr>
+                                        <th>ROIC 10Y CAGR</th>
+                                        <td>-3.30%</td>
+                                        <td>9.70%</td>
+                                        <td>15.54%</td>
+                                    </tr>
+                                    <tr>
+                                        <th>ROIC 10Y CV.</th>
+                                        <td>23.38%</td>
+                                        <td>258.40%</td>
+                                        <td>414.40%</td>
+                                    </tr>
+                                    <tr>
+                                        <th>ROIC - WACC</th>
+                                        <td>9.86%</td>
+                                        <td>12.32%</td>
+                                        <td>2.59%</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Capex/Sales</th>
+                                        <td>2.32%</td>
+                                        <td>0.53%</td>
+                                        <td>9.32%</td>
+                                    </tr>
+                                    <tr>
+                                        <th>EBIT Margin 10Y avg</th>
+                                        <td>12.80%</td>
+                                        <td>18.79%</td>
+                                        <td>3.68%</td>
+                                    </tr>
+                                    <tr>
+                                        <th>EBIT Margin 10Y CAGR</th>
+                                        <td>-0.20%</td>
+                                        <td>4.70%</td>
+                                        <td>9.90%</td>
+                                    </tr>
+                                    <tr>
+                                        <th>EBIT Margin 10Y CV</th>
+                                        <td>14.74%</td>
+                                        <td>79.34%</td>
+                                        <td>214.90%</td>
+                                    </tr>
+                                    <tr>
+                                        <th>10Y nb of shares CAGR</th>
+                                        <td>-1.28%</td>
+                                        <td>-0.51%</td>
+                                        <td>5.41%</td>
+                                    </tr>
+                                    <tr>
+                                        <th>10Y CAGR price</th>
+                                        <td>6.58%</td>
+                                        <td>17.35%</td>
+                                        <td>27.69%</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                        <p style="font-size: 14px;">
                            <i> Note: I have considered CAPEX/Revenue as a proxy for reinvestment rate since it is way easier to compute. Please note that this metric doesn’t make much sense for Autodesk since it is a software and asset-light company, but does show how Nike is in a much more mature state (and therefore has less reinvestment possibilities) than Tesla.</i>
                         </p>
+                        <h2 class="h4">
+                            Stock market price correlation factors 
+                        </h2>
                         <p>
                             Finally, one last interesting realization: the price evolution of a stock in the stock market usually correlates with EPS evolution + annual dividend paid by the company + valuation multiple evolution. That is, if you bought 10 years ago a company X that was doing 1$ EPS and today it is doing 6$ EPS, considering that the company has given a constant annual dividend of 1% and that 10 years ago it was at 20x PE ratio and today it is at 15x (since there is more negativity in the market sentiment), then the price of that stock has probably increased by 4.89 times by now. Why? Annual CAGR of 20.62% (adding the 1% annual dividend) minus the 25% discount in the valuation multiple compared to the past. 
                         </p>
